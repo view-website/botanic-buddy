@@ -103,3 +103,6 @@ body {
     cursor: pointer;
     transition: 0.5s;
   }
+  #identify:hover {
+    background-color: #2488278e;
+  }
