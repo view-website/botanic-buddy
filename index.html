@@ -6,7 +6,6 @@
   <title>Botanic Buddy</title>
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEWA7qEH9%2FXvz7CVw%2BOAHbvEIkVWIDkuIjNvZqtKo5Bq8XIw3pYVjo%2FeVK%2BMkJZDimvuk%2FQf5Y%2FSESaH1nkzxLJL%2BYzP4PG3rtqNUTUlPMNH8JK%2Bxyt2Er7NT%2FB6MPah4JMU7YJSTor2Qz6H40EvA6G0CNLxv60pjtnYzwNMFIRlP6L1ygdzuzF7BWCPPMoc0i8mexlrttGQ6uloVIIVxM5aekV6wnUaOJRlCiM0Ib0WKh4suwbsPHyXFct%2FlwSNkR9QoAcAjZrK%2FDU37r36gy9C6eQd%2BNceAWylnpBG8JTmSEKMd8Ou%2FSf7kZJIf1C4do2cqBdDjD7EFH8TZwJFWjhujq3zaIhTfyWZgbdL8YR6X%2FuWLQRIeE04sIMph%2Be0n90hvvQxqR6mavox5kpiWhi8RCzppr7dzJ5INiZM7WIkBuz9zcfqcpqkmam0kg7MlOxzc9gMgxhfsZxPe0LKWml2Qsi5DP80uWqi7J%2B%2Bn9joomDoSNHZk5OFZHmXQ1QGMRYtQHd0Mqzvs8RN%2B9HoweHlYGAzqOakMOHU22j04bRIqd%2BBaFwcAtnAdxaIM41N65YZFQ%3D%3D&sz=w512">
 </head>
@@ -28,7 +27,8 @@
           <option value="herb">Herb</option>
           <option value="vegetable">Vegetable</option>
         </select>
-        <button id="identify" onclick="identify()">Identify Plant</button>
+        <!--<button id="identification" onclick="identify()">Identify Plant</button>-->
+        <input type="button" value="Identify Plant" id="identify" onclick="identifypl()">
       </form>
       <div id="plant-info"></div>
     </section>
@@ -51,7 +51,7 @@
     <section id="nutrition-recommendations">
       <h2>Nutrition Recommendations</h2>
       <div id="nutrition-info">
-        <p id="reccommendations" style="color:rgb(33, 33, 33);">Nitrogen, Potassium, Phosphorous in a 10:10:10 ratio</p>
+        <p id="reccommendations" style="color:white;"></p>
       </div>
     </section>
   </main>
